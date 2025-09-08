@@ -11,7 +11,7 @@ jobs:
               with:
                 node-version: 18
             - name: Linting the code
-              run: npm lint
+              run: npm run lint
             - name: Install dependencies
               run: npm install
             - name: Build the project
