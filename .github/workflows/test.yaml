@@ -10,10 +10,10 @@ jobs:
               uses: actions/setup-node@v5
               with:
                 node-version: 18
-            - name: Linting the code
-              run: npm run lint
             - name: Install dependencies
               run: npm install --save-dev eslint
+            - name: Linting the code
+              run: npm run lint
             - name: Build the project
               run: npm build 
             - name: Deploy the project
